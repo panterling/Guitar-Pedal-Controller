@@ -1,0 +1,474 @@
+boss:
+  base_templates:
+    base_template1:
+      template: "04f04100040000000430126004000{idHex}7{valueHex}{trackerHex}f7"
+      idIdxs: [29, 32]
+      valueHexIdxs: [34, 35]
+      trackerHexIdxs: [36, 37]
+    base_template2:
+      template: "04f0410004000000043012600400{idHex}04{valueHex}{trackerHex}05f70000"
+      idIdxs: [28, 31]
+      valueHexIdxs: [34, 37]
+      trackerHexIdxs: [38, 39]
+    base_template3:
+      template: "04f04100040000000430126004001{idHex}7{valueHex}{trackerHex}f7"
+      idIdxs: [29, 32]
+      valueHexIdxs: [34, 35]
+      trackerHexIdxs: [36, 37]
+
+  static_commands:
+    startup:
+      first:
+        request: "04f07e7f070601f7"
+        response: null
+      second:
+        request: "04f07e00070601f7"
+        response: null
+      third:
+        request: "04f04100040000000430117f0400000004000000070100f7"
+        response: null
+      fourth:
+        request: "04f04100040000000430127f0400000107017ff7"
+        response: null
+    misc: null
+  commands:
+    misc:
+      ctrl:
+        base_template: base_template1
+        idHex: '0540'
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 256
+            - 257
+          pageId: 0
+        trackerHex: 4c
+    preamp:
+      bass:
+        base_template: base_template1
+        idHex: '0540'
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 256
+            - 257
+          pageId: 0
+        trackerHex: 4c
+      bright:
+        base_template: base_template1
+        idHex: 0590
+        maxValue: 1
+        minValue: 0
+        stateConfig:
+          idx:
+            - 268
+            - 269
+          pageId: 0
+        trackerHex: '47'
+      gain:
+        base_template: base_template1
+        idHex: '0520'
+        maxValue: 120
+        minValue: 0
+        stateConfig:
+          idx:
+            - 250
+            - 251
+          pageId: 0
+        trackerHex: 4e
+      level:
+        base_template: base_template1
+        idHex: 0580
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 266
+            - 267
+          pageId: 0
+        trackerHex: '48'
+      middle:
+        base_template: base_template1
+        idHex: '0550'
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 258
+            - 259
+          pageId: 0
+        trackerHex: 4b
+      presence:
+        base_template: base_template1
+        idHex: '0570'
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 264
+            - 265
+          pageId: 0
+        trackerHex: '49'
+      sptype:
+        base_template: base_template1
+        idHex: 05d0
+        maxValue: 8
+        minValue: 0
+        stateConfig:
+          idx:
+            - 280
+            - 281
+          pageId: 0
+        trackerHex: '43'
+      treble:
+        base_template: base_template1
+        idHex: '0560'
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 260
+            - 261
+          pageId: 0
+        trackerHex: 4a
+      type:
+        base_template: base_template1
+        idHex: '0510'
+        maxValue: 26
+        minValue: 0
+        stateConfig:
+          idx:
+            - 248
+            - 249
+          pageId: 0
+        trackerHex: 4f
+    fx1: null
+    odds:
+      bottom:
+        base_template: base_template1
+        idHex: '0330'
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 168
+            - 169
+          pageId: 0
+        trackerHex: 6d
+      dlevel:
+        base_template: base_template1
+        idHex: 0380
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 180
+            - 181
+          pageId: 0
+        trackerHex: '68'
+      drive:
+        base_template: base_template1
+        idHex: '0320'
+        maxValue: 120
+        minValue: 0
+        stateConfig:
+          idx:
+            - 164
+            - 165
+          pageId: 0
+        trackerHex: 6e
+      elevel:
+        base_template: base_template1
+        idHex: '0370'
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 178
+            - 179
+          pageId: 0
+        trackerHex: '69'
+      tone:
+        base_template: base_template1
+        idHex: '0340'
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 170
+            - 171
+          pageId: 0
+        trackerHex: 6c
+      type:
+        base_template: base_template1
+        idHex: '0310'
+        maxValue: 21
+        minValue: 0
+        stateConfig:
+          idx:
+            - 162
+            - 163
+          pageId: 0
+        trackerHex: 6f
+    fx2: null
+    delay:
+      taptime:
+        base_template: base_template1
+        idHex: '5680'
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+          - 88
+          - 89
+          pageId: 3
+        trackerHex: '33'
+      dtime:
+        base_template: base_template2
+        idHex: '0562'
+        maxValue: 2013
+        minValue: 1
+        stateConfig:
+          idx:
+            - 72
+            - 73
+            - 74
+            - 75
+          pageId: 3
+        trackerHex: '38'
+      time:
+        base_template: base_template3
+        idHex: 06a0
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 272
+            - 273
+          pageId: 10
+        trackerHex: '26'
+      tone:
+        base_template: base_template3
+        idHex: 06c0
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 276
+            - 277
+          pageId: 10
+        trackerHex: '24'
+      type:
+        base_template: base_template1
+        idHex: '5610'
+        maxValue: 6
+        minValue: 0
+        stateConfig:
+          idx:
+            - 68
+            - 69
+          pageId: 3
+        trackerHex: 3a
+      hold:
+        base_template: base_template3
+        idHex: 06f0
+        maxValue: 1
+        minValue: 0
+        stateConfig:
+          idx:
+            - 284
+            - 285
+          pageId: 10
+        trackerHex: '21'
+      dlevel:
+        base_template: base_template3
+        idHex: 06e0
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+          - 282
+          - 283
+          pageId: 10
+        trackerHex: '22'
+      feedback:
+        idHex: "5640"
+        trackerHex: "37"
+        base_template: "base_template1"
+        minValue: 0
+        maxValue: 100
+        stateConfig:
+          page: 3
+          idxs: [76, 77]
+      elevel:
+        base_template: base_template1
+        idHex: '5660'
+        maxValue: 120
+        minValue: 0
+        stateConfig:
+          idx:
+            - 82
+            - 83
+          pageId: 3
+        trackerHex: '35'
+      highcut:
+        base_template: base_template1
+        idHex: '5650'
+        maxValue: 14
+        minValue: 0
+        stateConfig:
+          idx:
+            - 80
+            - 81
+          pageId: 3
+        trackerHex: '36'
+      moddepth:
+        base_template: base_template1
+        idHex: '5740'
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 120
+            - 121
+          pageId: 3
+        trackerHex: '27'
+      modrate:
+        base_template: base_template1
+        idHex: '5730'
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 116
+            - 117
+          pageId: 3
+        trackerHex: '28'
+    reverb:
+#      dtime:
+#        base_template: base_template2
+#        idHex: '1070'
+#        maxValue: 657
+#        minValue: 1
+#        stateConfig:
+#          idx:
+#            - 288
+#            - 291
+#          pageId: 10
+#        trackerHex: 1f
+      elevel:
+        base_template: base_template1
+        idHex: '6180'
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 216
+            - 217
+          pageId: 3
+        trackerHex: '02'
+      highcut:
+        base_template: base_template1
+        idHex: '6160'
+        maxValue: 14
+        minValue: 0
+        stateConfig:
+          idx:
+            - 210
+            - 211
+          pageId: 3
+        trackerHex: '04'
+      lowcut:
+        base_template: base_template1
+        idHex: '6150'
+        maxValue: 17
+        minValue: 0
+        stateConfig:
+          idx:
+            - 208
+            - 209
+          pageId: 3
+        trackerHex: '05'
+      spring:
+        base_template: base_template1
+        idHex: 61a0
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 220
+            - 221
+          pageId: 3
+        trackerHex: '00'
+      time:
+        base_template: base_template1
+        idHex: '6120'
+        maxValue: 99
+        minValue: 0
+        stateConfig:
+          idx:
+            - 200
+            - 201
+          pageId: 3
+        trackerHex: 08
+      type:
+        base_template: base_template1
+        idHex: '6110'
+        maxValue: 7
+        minValue: 0
+        stateConfig:
+          idx:
+            - 196
+            - 197
+          pageId: 3
+        trackerHex: 09
+      feedback:
+        base_template: base_template3
+        idHex: '0720'
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 292
+            - 293
+          pageId: 10
+        trackerHex: 1e
+      dlevel:
+        base_template: base_template3
+        idHex: '0750'
+        maxValue: 100
+        minValue: 0
+        stateConfig:
+          idx:
+            - 300
+            - 301
+          pageId: 10
+        trackerHex: 1b
+      elevel_delay:
+        base_template: base_template3
+        idHex: '0740'
+        maxValue: 120
+        minValue: 0
+        stateConfig:
+          idx:
+            - 298
+            - 299
+          pageId: 10
+        trackerHex: 1c
+      highcut_delay:
+        base_template: base_template3
+        idHex: '0730'
+        maxValue: 14
+        minValue: 0
+        stateConfig:
+          idx:
+            - 296
+            - 297
+          pageId: 10
+        trackerHex: 1d
+
+
+
+
